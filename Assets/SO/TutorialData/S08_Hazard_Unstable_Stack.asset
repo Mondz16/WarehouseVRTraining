@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: S08_Hazard_Unstable_Stack
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Identify Hazard 3 \u2014 Unstable Pallet Stack"
+  <Description>k__BackingField: 'In the storage area you will see a pallet stack
+    that is leaning. Unstable stacking is a major cause of crush injuries in warehouses.
+    Products should always be stacked with the heaviest items at the bottom, stacked
+    vertically without overhang, and secured with stretch wrap if they exceed a single
+    pallet height. A leaning stack should never be approached from the direction
+    of the lean. Log this hazard now and remember the rule: if in doubt, do not touch
+    it, report it and keep others away.'
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 66007ff8f10346d42a10f99485f0f5fc, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Log the Unstable Pallet Stack
+    <ChallengeTriggerName>k__BackingField: TRIGGER_Safety_LogUnstableStack
+    <IsComplete>k__BackingField: 0

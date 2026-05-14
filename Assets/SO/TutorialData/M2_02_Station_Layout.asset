@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M2_02_Station_Layout
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: The Packing Station Layout
+  <Description>k__BackingField: Walk to the packing bench in the centre of the dispatch
+    area. The bench has three zones. On your left are the three carton sizes, Small
+    (30x20x15 cm), Medium (45x35x25 cm), and Large (60x50x40 cm). In the centre is
+    your working area where you will assemble and seal the order. On your right is
+    the label printer and the outbound conveyor. Your order details panel is mounted
+    above the bench and shows the item dimensions, weight, and destination. Take
+    a moment to locate all three zones before we begin.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 76b400397625e0a4a9e3a7aced7037ac, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Locate All Three Station Zones
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M2_StationLayoutConfirmed
+    <IsComplete>k__BackingField: 0

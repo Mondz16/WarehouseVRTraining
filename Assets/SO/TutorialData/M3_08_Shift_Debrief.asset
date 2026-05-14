@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M3_08_Shift_Debrief
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: Shift Simulation Debrief
+  <Description>k__BackingField: Your shift simulation is complete. The AI has calculated
+    your cumulative route efficiency across all 10 orders. You can see your total
+    distance walked compared to the optimal total, the number of zone re-entries
+    flagged, and the three orders where your efficiency was lowest. Study the order-by-order
+    breakdown. Consistent inefficiency on certain order types, such as multi-zone
+    orders or batched picks. This tells you exactly where to focus your improvement.
+    The AI will also flag whether idle time or congestion response affected your
+    score.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 86b9f8a3984300d4c99695e6d98cf9f3, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Review the Full Shift Debrief
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M3_ShiftDebriefConfirmed
+    <IsComplete>k__BackingField: 0

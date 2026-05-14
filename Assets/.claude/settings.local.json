@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\chris\\\\UnityProjects\\\\WarehouseOperationsTraining\" -Recurse -Filter \"*mcp*\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object FullName)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\chris\\\\AppData\" -Recurse -Filter \"*mcpforunity*\" -ErrorAction SilentlyContinue)",
+      "Skill(update-config)",
+      "mcp__mcpforunity__execute_menu_item",
+      "mcp__mcpforunity__manage_scene",
+      "mcp__mcpforunity__debug_request_context",
+      "mcp__mcpforunity__batch_execute",
+      "mcp__mcpforunity__manage_editor",
+      "mcp__mcpforunity__find_gameobjects",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\chris\\\\UnityProjects\\\\WarehouseOperationsTraining\\\\Assets\\\\Prefabs\" | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\chris\\\\UnityProjects\\\\WarehouseOperationsTraining\\\\Assets\\\\Prefabs\\\\Valari_Package\" -Recurse | ForEach-Object { $_.FullName })",
+      "mcp__mcpforunity__execute_code"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "mcpforunity"
+  ]
+}

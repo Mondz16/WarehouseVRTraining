@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M3_06_Congestion_Response
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Congestion Response \u2014 Re-Routing on the Fly"
+  <Description>k__BackingField: 'You are mid-pick when a forklift is operating in
+    Aisle B, blocking access. You cannot safely enter an aisle while a forklift is
+    working in it. Your options are: wait for the forklift to clear, complete other
+    picks in accessible zones first, or find an alternative entry point if the aisle
+    has two access points. In this simulation, the forklift will clear after 30 seconds.
+    The optimal response is to complete your Zone C picks while the forklift clears
+    Zone B, then return to finish Zone B without backtracking. Re-route now and complete
+    the pick.'
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 46b0f371e983f234c8d575da467cfe42, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Re-Route Around Forklift and Complete the Pick
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M3_CongestionPickComplete
+    <IsComplete>k__BackingField: 0

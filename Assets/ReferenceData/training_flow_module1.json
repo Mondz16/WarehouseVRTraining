@@ -1,0 +1,155 @@
+[
+  {
+    "Title": "Welcome to Order Picking",
+    "Description": "Order picking is the process of retrieving specific products from their storage locations in the warehouse to fulfil a customer order. It is the most labour-intensive activity in any fulfilment operation, accounting for 50 to 75 percent of total warehouse operating costs. Picking accuracy directly affects customer satisfaction — every mis-pick results in a return, a reshipping cost, and a dissatisfied customer. In this module you will learn how to read a pick list, locate and verify the correct product, pick the correct quantity, and handle errors before they leave the warehouse floor.",
+    "VoiceOver": { "name": "Module1-01", "hideFlags": "NotEditable" },
+    "HasChallenges": false,
+    "IsInOrder": true,
+    "name": "M1_01_Welcome_Order_Picking",
+    "hideFlags": "None",
+    "TutorialChallengeLists": []
+  },
+  {
+    "Title": "The Pick List — Your Instruction Sheet",
+    "Description": "Every picking task begins with a pick list — either printed or displayed on a handheld scanner. Your virtual pick list appears on the wrist panel of your left hand. Open it now by raising your left wrist. The pick list shows you four pieces of information for each item: the SKU (Stock Keeping Unit) — a unique product identifier, the product description, the storage location (aisle, shelf, and bin number), and the quantity required. Read each line carefully before you move. Picking the wrong item or wrong quantity is far more costly than taking an extra few seconds to verify.",
+    "VoiceOver": { "name": "Module1-02", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M1_02_Pick_List_Introduction",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Open the Wrist Pick List Panel",
+        "ChallengeTriggerName": "TRIGGER_M1_OpenPickList",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Reading Your First Pick — Location",
+    "Description": "Your first pick list has one item. The location shown is A-02-03, which means Aisle A, Shelf 2, Bin 3. Warehouse locations follow this structure in most facilities: the letter identifies the aisle, the first number identifies the shelf level from the floor (1 is ground level, 2 is mid-level, 3 is top), and the second number identifies the bin position along the shelf from left to right. Aisle A is the first aisle on your left. Walk there now and find the correct shelf and bin before touching anything.",
+    "VoiceOver": { "name": "Module1-03", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M1_03_Reading_Pick_Location",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Navigate to Location A-02-03",
+        "ChallengeTriggerName": "TRIGGER_M1_ReachLocation_A0203",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "SKU Verification — Never Pick on Description Alone",
+    "Description": "You are now at the correct bin. Before you pick the item, you must verify its SKU. Product descriptions can be similar or abbreviated in ways that create confusion — for example, a bin labelled 'Blue Widget 500ml' may sit next to 'Blue Widget 750ml'. The SKU eliminates that ambiguity. Use the virtual scanner on your right hand — grip the scanner tool from your hip, point it at the item's barcode label on the shelf face, and press trigger to scan. The scanner will confirm a match in green or flag a mismatch in red. Only pick the item after a green confirmation.",
+    "VoiceOver": { "name": "Module1-04", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M1_04_SKU_Verification",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Scan and Verify the Item SKU",
+        "ChallengeTriggerName": "TRIGGER_M1_ScanSKU_Verified",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Picking the Correct Quantity",
+    "Description": "The pick list asks for 3 units of this item. The bin contains a mixture of this product and a similar-looking product. Count carefully before picking — do not grab a handful and assume. In real warehouse operations, quantity errors are the second most common type of mis-pick after wrong SKU, and they are harder to detect downstream because the product description may match. Pick exactly 3 units and place them into the virtual tote on your left side. The tote will count each item as it is placed.",
+    "VoiceOver": { "name": "Module1-05", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M1_05_Quantity_Pick",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Pick Exactly 3 Units into the Tote",
+        "ChallengeTriggerName": "TRIGGER_M1_PickQuantity_3",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Multi-Line Order — Planning Before Moving",
+    "Description": "Your next pick list has 3 items across two aisles — Aisles B and C. Before you move, read all three lines and plan your route. The most efficient approach is to pick all items in one aisle before moving to the next. Do not pick in pick list order if the order sends you back and forth between aisles — the pick list order is generated by the customer, not by your warehouse layout. Check the aisle, shelf, and bin for all three items, decide the most efficient sequence, and then start moving. The AI will record your route.",
+    "VoiceOver": { "name": "Module1-06", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M1_06_Multi_Line_Order",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Complete All 3 Picks in the Multi-Line Order",
+        "ChallengeTriggerName": "TRIGGER_M1_MultiLine_AllPicked",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Error Recovery — Catching a Mis-Pick",
+    "Description": "Before you submit your tote, the system has flagged a potential error. One of the items in your tote does not match the pick list. This is a deliberate training scenario — in a real facility, mis-picks are caught at the packing station or, worse, by the customer. Your job is to check each item in the tote against the pick list, identify the incorrect item, remove it, and replace it with the correct one. Mis-picks that reach the customer cost an average of 12 to 15 times more to resolve than mis-picks caught on the warehouse floor.",
+    "VoiceOver": { "name": "Module1-07", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M1_07_Error_Recovery",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Identify and Remove the Incorrect Item",
+        "ChallengeTriggerName": "TRIGGER_M1_RemoveMisPick",
+        "IsComplete": false
+      },
+      {
+        "ChallengeTitle": "Replace with the Correct Item",
+        "ChallengeTriggerName": "TRIGGER_M1_ReplaceCorrectItem",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Path Efficiency Review",
+    "Description": "Your picking session is complete. The AI has now analysed your route through the warehouse and compared it to the optimal path. On the floor you can see two overlaid lines — a green line showing the optimal route, and an amber line showing your actual route. Every metre of unnecessary travel in a warehouse adds up across a shift. A picker walking 15 kilometres per shift who reduces their travel by 15 percent saves over 2 kilometres of walking per day. Study the difference between your route and the optimal route before continuing. The AI will highlight specific points where you backtracked or visited zones out of sequence.",
+    "VoiceOver": { "name": "Module1-08", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M1_08_Path_Efficiency_Review",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Review the Path Comparison Display",
+        "ChallengeTriggerName": "TRIGGER_M1_PathReviewConfirmed",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Order Picking Assessment",
+    "Description": "You have completed all practical stages of the Order Picking module. Now test your understanding with a 13-question knowledge assessment. The questions cover pick list reading, location codes, SKU verification, quantity accuracy, and error recovery. A score of 80 percent or above is required to pass. Apply what you have practised — each question is drawn directly from the scenarios you completed in this module.",
+    "VoiceOver": { "name": "Module1-09", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M1_09_Assessment",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Complete the Order Picking Assessment",
+        "ChallengeTriggerName": "TRIGGER_M1_AssessmentComplete",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Module 1 Complete — Well Done",
+    "Description": "Congratulations on completing the Order Picking module. You have learned how to read a pick list, navigate to a storage location, verify a product by SKU, pick the correct quantity, recover from a mis-pick error, and review your route for efficiency. These are the core skills of every picker on this floor. The habits you build now — verify before you pick, plan your route before you move, check your tote before you submit — will make you a reliable and efficient member of the team. Proceed to your next module when you are ready.",
+    "VoiceOver": { "name": "Module1-10", "hideFlags": "NotEditable" },
+    "HasChallenges": false,
+    "IsInOrder": true,
+    "name": "M1_10_Module_Complete",
+    "hideFlags": "None",
+    "TutorialChallengeLists": []
+  }
+]

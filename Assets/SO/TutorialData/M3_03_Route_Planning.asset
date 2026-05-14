@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M3_03_Route_Planning
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Plan Before You Move \u2014 5-Item Route Planning"
+  <Description>k__BackingField: Your first pick list has 5 items across all three
+    zones. Before you take a single step, read all five lines and plan your sequence.
+    Write your planned zone order using the wrist panel notepad, Zone A items first,
+    then Zone B, then Zone C. The AI will record both your planned sequence and your
+    actual route. Experienced pickers plan their route in under 30 seconds before
+    moving. The time investment at the start saves far more time across the full
+    pick. Plan your route now and confirm it before starting.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 568734b70ee95c944a03da4b54810b3f, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Plan and Confirm Your Zone Sequence
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M3_RoutePlanConfirmed
+    <IsComplete>k__BackingField: 0
+  - <ChallengeTitle>k__BackingField: Complete the 5-Item Pick in Planned Sequence
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M3_FiveItemPickComplete
+    <IsComplete>k__BackingField: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M2_04_Void_Fill_Application
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Void Fill \u2014 Why It Matters"
+  <Description>k__BackingField: Void fill is the material placed around an item inside
+    the box to prevent movement during transit. Without sufficient void fill, the
+    item shifts, impacts the box walls, and can be damaged, even in a well-built
+    carton. The required amount of void fill is enough to eliminate all internal
+    movement, if you close the box and shake it, nothing should move. Apply void
+    fill to the base of the box, place the item in the centre, then fill the remaining
+    space on all sides and over the top. Your void fill dispenser is on the right
+    side of the bench. Apply the correct amount now.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 7037fabb776a93845a7ca0cca605a1cd, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Apply Correct Void Fill to the Base
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M2_VoidFillBase
+    <IsComplete>k__BackingField: 0
+  - <ChallengeTitle>k__BackingField: Place Item and Fill Remaining Space
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M2_VoidFillTop
+    <IsComplete>k__BackingField: 0

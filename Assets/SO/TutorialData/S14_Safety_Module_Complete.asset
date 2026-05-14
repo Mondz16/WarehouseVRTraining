@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: S14_Safety_Module_Complete
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: Safety Module Complete
+  <Description>k__BackingField: Congratulations on completing the Warehouse Safety
+    module. You have demonstrated your understanding of PPE requirements, hazard
+    identification, emergency procedures, and load safety. These are the four pillars
+    that keep every person on this floor protected. The habits you build in safety
+    training carry into every shift you work. Stay aware, speak up when you see a
+    hazard, and look out for your colleagues. Operational training modules are now
+    unlocked. Choose your next module to continue.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: b22a3524f9ec622478bb197859bf72c9, type: 3}
+  <HasChallenges>k__BackingField: 0
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists: []

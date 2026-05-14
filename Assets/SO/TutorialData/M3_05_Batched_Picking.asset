@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M3_05_Batched_Picking
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Batched Picking \u2014 Two Orders at Once"
+  <Description>k__BackingField: Batched picking means picking multiple orders simultaneously
+    on a single route, using a divided tote or trolley with a separate section for
+    each order. A picker doing two orders on one route walks far less than a picker
+    doing two separate routes. The rule for batching is that both orders must share
+    at least one zone, otherwise batching them adds travel rather than removing it.
+    Your tote is now divided into two sections labelled Order 1 and Order 2. You
+    have two pick lists, read both before you move and plan a single route that covers
+    both orders efficiently.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: eebb50c34ee25b34ab88640d214c5659, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Complete Both Orders in a Single Batched Route
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M3_BatchPickComplete
+    <IsComplete>k__BackingField: 0

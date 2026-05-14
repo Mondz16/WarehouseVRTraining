@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: S07_Hazard_Blocked_Exit
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Identify Hazard 2 \u2014 Blocked Fire Exit"
+  <Description>k__BackingField: Near the south wall you will see a fire exit door.
+    A pallet has been left directly in front of it. A blocked fire exit is one of
+    the most serious safety violations in any workplace. In an emergency, seconds
+    matter, and a blocked exit can turn an evacuable situation into a fatal one.
+    Fire exits must be kept clear at all times, even temporarily. There is no such
+    thing as a short-term block. If you see a blocked exit, do not move the obstruction
+    yourself if it involves heavy goods, report it immediately so it can be cleared
+    safely. Log this hazard now.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 0e25deda6335f20498a55b05b0ef30d5, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Log the Blocked Fire Exit
+    <ChallengeTriggerName>k__BackingField: TRIGGER_Safety_LogBlockedExit
+    <IsComplete>k__BackingField: 0

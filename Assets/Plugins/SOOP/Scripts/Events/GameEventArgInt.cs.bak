@@ -1,0 +1,50 @@
+﻿// ----------------------------------------------------------------------------
+// SOOP Framework
+// 
+// Original
+// Author:  Ryan Hipple
+// Date:    10/04/17
+//
+// Author:  Scott Cameron
+// Date:    04/13/18
+// ----------------------------------------------------------------------------
+
+using UnityEngine;
+using System.Collections.Generic;
+
+namespace SOOP.Events
+{
+    [CreateAssetMenu(menuName = "SOOP/Game Event/Int Argument")]
+    public class GameEventArgInt : ScriptableObject
+    {
+
+#if UNITY_EDITOR
+        [Multiline]
+        public string DeveloperDescription = "";
+#endif
+
+        /// <summary>
+        /// The list of listeners that this event will notify if it is raised.
+        /// </summary>
+        private readonly List<GameEventListenerArgInt> eventListeners =
+            new List<GameEventListenerArgInt>();
+
+        public void Raise(int value)
+        {
+            for (int i = eventListeners.Count - 1; i >= 0; i--)
+                eventListeners[i].OnEventRaised(value);
+        }
+
+        public void RegisterListener(GameEventListenerArgInt listener)
+        {
+            if (!eventListeners.Contains(listener))
+                eventListeners.Add(listener);
+        }
+
+        public void UnregisterListener(GameEventListenerArgInt listener)
+        {
+            if (eventListeners.Contains(listener))
+                eventListeners.Remove(listener);
+        }
+    }
+}

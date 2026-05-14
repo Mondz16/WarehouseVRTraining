@@ -1,0 +1,155 @@
+[
+  {
+    "Title": "Welcome to Route Optimisation",
+    "Description": "Route optimisation is one of the highest-leverage improvements available in any warehouse operation. A picker who walks an inefficient route through the warehouse wastes time on every single order, and those wasted minutes compound across hundreds of picks per shift, thousands of shifts per year. Studies show that unoptimised picking routes add 20 to 40 percent unnecessary travel distance compared to a planned route. In this module you will learn zone sequencing, batched picking, how to re-route around obstacles, and how to use the AI path comparison tool to measure your own efficiency.",
+    "VoiceOver": { "name": "Module3-01", "hideFlags": "NotEditable" },
+    "HasChallenges": false,
+    "IsInOrder": true,
+    "name": "M3_01_Welcome_Route_Optimisation",
+    "hideFlags": "None",
+    "TutorialChallengeLists": []
+  },
+  {
+    "Title": "Understanding Zone Sequencing",
+    "Description": "This warehouse is divided into three zones — Zone A on the left, Zone B in the centre, and Zone C on the right. Zone sequencing means picking all items in Zone A before moving to Zone B, and all items in Zone B before moving to Zone C, regardless of the order they appear on the pick list. The principle is simple: entering and leaving a zone costs time. Every unnecessary re-entry is wasted travel. Look at the warehouse floor — the zone boundaries are marked with coloured lines. Zone A is blue, Zone B is amber, Zone C is green. Familiarise yourself with the layout before we continue.",
+    "VoiceOver": { "name": "Module3-02", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M3_02_Zone_Sequencing_Introduction",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Confirm Zone Layout Understanding",
+        "ChallengeTriggerName": "TRIGGER_M3_ZoneLayoutConfirmed",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Plan Before You Move — 5-Item Route Planning",
+    "Description": "Your first pick list has 5 items across all three zones. Before you take a single step, read all five lines and plan your sequence. Write your planned zone order using the wrist panel notepad — Zone A items first, then Zone B, then Zone C. The AI will record both your planned sequence and your actual route. Experienced pickers plan their route in under 30 seconds before moving. The time investment at the start saves far more time across the full pick. Plan your route now and confirm it before starting.",
+    "VoiceOver": { "name": "Module3-03", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M3_03_Route_Planning",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Plan and Confirm Your Zone Sequence",
+        "ChallengeTriggerName": "TRIGGER_M3_RoutePlanConfirmed",
+        "IsComplete": false
+      },
+      {
+        "ChallengeTitle": "Complete the 5-Item Pick in Planned Sequence",
+        "ChallengeTriggerName": "TRIGGER_M3_FiveItemPickComplete",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Path Comparison — Your Route vs Optimal",
+    "Description": "Your 5-item pick is complete. The AI has calculated the optimal route for this pick list and overlaid it on the warehouse floor. The green line is the optimal path. The amber line is your actual path. Study the difference. The AI will highlight up to three specific inefficiencies — points where you deviated from the optimal route by more than 2 metres or where you entered a zone you had already left. Understanding why the optimal route is better prepares you to plan more effectively on your next pick.",
+    "VoiceOver": { "name": "Module3-04", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M3_04_Path_Comparison",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Review the AI Path Comparison",
+        "ChallengeTriggerName": "TRIGGER_M3_PathComparisonReviewed",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Batched Picking — Two Orders at Once",
+    "Description": "Batched picking means picking multiple orders simultaneously on a single route, using a divided tote or trolley with a separate section for each order. A picker doing two orders on one route walks far less than a picker doing two separate routes. The rule for batching is that both orders must share at least one zone — otherwise batching them adds travel rather than removing it. Your tote is now divided into two sections labelled Order 1 and Order 2. You have two pick lists — read both before you move and plan a single route that covers both orders efficiently.",
+    "VoiceOver": { "name": "Module3-05", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M3_05_Batched_Picking",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Complete Both Orders in a Single Batched Route",
+        "ChallengeTriggerName": "TRIGGER_M3_BatchPickComplete",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Congestion Response — Re-Routing on the Fly",
+    "Description": "You are mid-pick when a forklift is operating in Aisle B, blocking access. You cannot safely enter an aisle while a forklift is working in it. Your options are: wait for the forklift to clear, complete other picks in accessible zones first, or find an alternative entry point if the aisle has two access points. In this simulation, the forklift will clear after 30 seconds. The optimal response is to complete your Zone C picks while the forklift clears Zone B, then return to finish Zone B without backtracking. Re-route now and complete the pick.",
+    "VoiceOver": { "name": "Module3-06", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M3_06_Congestion_Response",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Re-Route Around Forklift and Complete the Pick",
+        "ChallengeTriggerName": "TRIGGER_M3_CongestionPickComplete",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Full Shift Simulation — 10 Orders",
+    "Description": "You will now complete a 10-order picking simulation. Each order is assigned by the AI based on your performance in the previous stages. The AI tracks your total distance walked, the number of zone re-entries, idle time, and efficiency percentage compared to the optimal route for each order. There is no guide or overlay during this simulation — apply everything you have learned. Plan before you move, sequence your zones, batch where possible, and re-route when blocked. Your cumulative efficiency score will be shown at the end.",
+    "VoiceOver": { "name": "Module3-07", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M3_07_Full_Shift_Simulation",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Complete All 10 Orders in the Shift Simulation",
+        "ChallengeTriggerName": "TRIGGER_M3_ShiftSimulationComplete",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Shift Simulation Debrief",
+    "Description": "Your shift simulation is complete. The AI has calculated your cumulative route efficiency across all 10 orders. You can see your total distance walked compared to the optimal total, the number of zone re-entries flagged, and the three orders where your efficiency was lowest. Study the order-by-order breakdown. Consistent inefficiency on certain order types — such as multi-zone orders or batched picks — tells you exactly where to focus your improvement. The AI will also flag whether idle time or congestion response affected your score.",
+    "VoiceOver": { "name": "Module3-08", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M3_08_Shift_Debrief",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Review the Full Shift Debrief",
+        "ChallengeTriggerName": "TRIGGER_M3_ShiftDebriefConfirmed",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Route Optimisation Assessment",
+    "Description": "The knowledge assessment for this module covers zone sequencing, batched picking principles, congestion response, and route planning. 12 questions. 80 percent to pass. The questions are drawn from the scenarios you completed — the rules for batching orders, when not to batch, how to respond to a blocked aisle, and how to read the path comparison data.",
+    "VoiceOver": { "name": "Module3-09", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M3_09_Assessment",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Complete the Route Optimisation Assessment",
+        "ChallengeTriggerName": "TRIGGER_M3_AssessmentComplete",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Module 3 Complete — Well Done",
+    "Description": "Congratulations on completing the Route Optimisation module. You have learned that efficiency in a warehouse is not about moving faster — it is about moving less. Every metre of unnecessary travel is a cost that compounds across every picker, every shift, every day. The habits you have built here — plan before you move, sequence your zones, batch intelligently, re-route calmly — will make you a measurably more efficient picker and a more valuable member of this team. You have now completed all training modules in the Warehouse Operations series.",
+    "VoiceOver": { "name": "Module3-10", "hideFlags": "NotEditable" },
+    "HasChallenges": false,
+    "IsInOrder": true,
+    "name": "M3_10_Module_Complete",
+    "hideFlags": "None",
+    "TutorialChallengeLists": []
+  }
+]

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: S12_Load_Safety_Check
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Load Safety \u2014 Stable vs Unstable"
+  <Description>k__BackingField: Back on the floor, you will see two pallet stacks
+    side by side. One is correctly stacked, heavy items on the bottom, vertically
+    aligned, fully wrapped. The other has lighter items on the bottom, an overhanging
+    top layer, and no stretch wrap. Your job is to identify which stack is safe to
+    move. Incorrectly moving an unstable load is one of the most dangerous acts in
+    a warehouse, it risks injury to yourself, colleagues nearby, and damage to the
+    racking system. Examine both stacks and select the safe one.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 029dd03d0dc718443a8f6f8109664106, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Identify the Safe Pallet Stack
+    <ChallengeTriggerName>k__BackingField: TRIGGER_Safety_IdentifySafeStack
+    <IsComplete>k__BackingField: 0

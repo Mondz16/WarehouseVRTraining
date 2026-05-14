@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M1_01_Welcome_Order_Picking
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: Welcome to Order Picking
+  <Description>k__BackingField: Order picking is the process of retrieving specific
+    products from their storage locations in the warehouse to fulfil a customer order.
+    It is the most labour-intensive activity in any fulfilment operation, accounting
+    for 50 to 75 percent of total warehouse operating costs. Picking accuracy directly
+    affects customer satisfaction, every mis-pick results in a return, a reshipping
+    cost, and a dissatisfied customer. In this module you will learn how to read
+    a pick list, locate and verify the correct product, pick the correct quantity,
+    and handle errors before they leave the warehouse floor.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: cd5a4de7994799741a2b38e1e1da20b7, type: 3}
+  <HasChallenges>k__BackingField: 0
+  <IsInOrder>k__BackingField: 0
+  TutorialChallengeLists: []

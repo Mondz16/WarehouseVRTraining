@@ -1,0 +1,399 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c1eeda66c04ddc48abbe159391f2731, type: 3}
+  m_Name: AssessmentDataCollectionSO
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Collections.AssessmentDataCollection
+  _assessmentList:
+  - ID: 1
+    Data:
+    - Question: What is the mandatory PPE required before entering the warehouse floor?
+      AnswerIndex: 2
+      Choices:
+      - Hard hat only
+      - High-vis vest only
+      - Hard hat and high-vis vest
+      - Safety goggles and gloves
+      IsCorrect: 0
+    - Question: How far away can forklift operators see workers wearing a Class 2 high-visibility vest?
+      AnswerIndex: 2
+      Choices:
+      - 10 metres
+      - 50 metres
+      - 100 metres
+      - 200 metres
+      IsCorrect: 0
+    - Question: What are the four hazards covered in the warehouse hazard walk?
+      AnswerIndex: 1
+      Choices:
+      - Wet floors, blocked exits, unstable racking, and electrical faults
+      - Wet floors, blocked exits, unstable racking, and unsecured loads
+      - Slippery floors, fire hazards, unstable racking, and unsecured loads
+      - Wet floors, blocked exits, forklift collisions, and unsecured loads
+      IsCorrect: 0
+    - Question: When is it acceptable to temporarily block a fire exit?
+      AnswerIndex: 2
+      Choices:
+      - For a few minutes when moving heavy goods
+      - When no emergency is currently occurring
+      - Never
+      - Only when authorised by a supervisor
+      IsCorrect: 0
+    - Question: What type of fire extinguisher is suitable for electrical fires in a warehouse?
+      AnswerIndex: 2
+      Choices:
+      - Water
+      - Foam
+      - CO2
+      - Dry powder
+      IsCorrect: 0
+    - Question: When should you NOT approach a leaning pallet stack?
+      AnswerIndex: 2
+      Choices:
+      - From the side
+      - From the back
+      - From the direction of the lean
+      - From any direction at all
+      IsCorrect: 0
+    - Question: What is the correct way to stack products on a pallet?
+      AnswerIndex: 1
+      Choices:
+      - Lightest items at the bottom for a stable base
+      - Heaviest items at the bottom, stacked vertically without overhang
+      - Any arrangement as long as the pallet is stretch-wrapped
+      - Items distributed evenly regardless of weight
+      IsCorrect: 0
+    - Question: What must you NOT do during a warehouse evacuation?
+      AnswerIndex: 2
+      Choices:
+      - Follow the green floor arrows to the muster point
+      - Proceed to the muster point for a headcount
+      - Use a lift to save time
+      - Leave the building immediately
+      IsCorrect: 0
+    - Question: What is the purpose of the muster point during an evacuation?
+      AnswerIndex: 1
+      Choices:
+      - A shelter to wait in until the fire brigade arrives
+      - A location where a headcount is taken to confirm everyone has evacuated
+      - A staging area for emergency equipment
+      - A designated re-entry point once conditions are safe
+      IsCorrect: 0
+    - Question: What should you do if you identify a hazard on the warehouse floor?
+      AnswerIndex: 2
+      Choices:
+      - Attempt to fix it yourself immediately
+      - Ignore it if it seems minor
+      - Log it and report it so it can be resolved
+      - Mark the area and continue working around it
+      IsCorrect: 0
+  - ID: 2
+    Data:
+    - Question: Where is the virtual pick list located in this VR training?
+      AnswerIndex: 1
+      Choices:
+      - On the right hip panel
+      - On the left wrist panel
+      - On the right wrist panel
+      - Mounted on the tote
+      IsCorrect: 0
+    - Question: What four pieces of information does a pick list show for each item?
+      AnswerIndex: 1
+      Choices:
+      - SKU, description, quantity, and price
+      - SKU, description, location, and quantity
+      - Description, location, quantity, and weight
+      - SKU, barcode, location, and quantity
+      IsCorrect: 0
+    - Question: What does the location code A-02-03 mean?
+      AnswerIndex: 2
+      Choices:
+      - Aisle A, Zone 02, Row 3
+      - Aisle A, Rack 02, Floor 3
+      - Aisle A, Shelf 2, Bin 3
+      - Area A, Section 02, Box 03
+      IsCorrect: 0
+    - Question: Which shelf level number represents ground level?
+      AnswerIndex: 1
+      Choices:
+      - "0"
+      - "1"
+      - "2"
+      - "3"
+      IsCorrect: 0
+    - Question: Why must you verify a product by SKU rather than description alone?
+      AnswerIndex: 0
+      Choices:
+      - Descriptions can be similar or abbreviated, causing confusion
+      - SKU scanning is faster than reading the label
+      - It is a legal requirement in all warehouse facilities
+      - Descriptions are only available on the printed pick list
+      IsCorrect: 0
+    - Question: What colour confirmation indicates a successful SKU scan?
+      AnswerIndex: 2
+      Choices:
+      - Red
+      - Amber
+      - Green
+      - Blue
+      IsCorrect: 0
+    - Question: What is the second most common type of mis-pick in warehouse operations?
+      AnswerIndex: 2
+      Choices:
+      - Wrong location
+      - Wrong SKU
+      - Quantity error
+      - Expired product
+      IsCorrect: 0
+    - Question: Why should you not pick in pick list order on a multi-aisle order?
+      AnswerIndex: 2
+      Choices:
+      - Pick list order is based on item weight
+      - The AI system requires zone-based picking
+      - Pick list order is generated by the customer, not the warehouse layout
+      - The pick list does not show aisle information
+      IsCorrect: 0
+    - Question: How much more does it cost to resolve a mis-pick that reaches the customer?
+      AnswerIndex: 2
+      Choices:
+      - 2 to 3 times more
+      - 5 to 7 times more
+      - 12 to 15 times more
+      - 20 to 25 times more
+      IsCorrect: 0
+    - Question: What should you do before touching any item at a bin location?
+      AnswerIndex: 2
+      Choices:
+      - Confirm there is enough quantity in the bin
+      - Check the shelf label matches the pick list description
+      - Verify the product SKU using the scanner
+      - Count all items in the bin before picking
+      IsCorrect: 0
+    - Question: In the path comparison display, what does the amber line represent?
+      AnswerIndex: 1
+      Choices:
+      - The optimal route
+      - Your actual route
+      - A blocked zone
+      - The recommended future route
+      IsCorrect: 0
+    - Question: When picking a multi-line order, what should you do before moving?
+      AnswerIndex: 2
+      Choices:
+      - Start with the nearest item and work outward
+      - Pick in the order items appear on the pick list
+      - Read all lines and plan the most efficient route first
+      - Pick items in ascending bin number order
+      IsCorrect: 0
+    - Question: What score is required to pass the Order Picking assessment?
+      AnswerIndex: 2
+      Choices:
+      - 70 percent
+      - 75 percent
+      - 80 percent
+      - 85 percent
+      IsCorrect: 0
+  - ID: 3
+    Data:
+    - Question: What is the minimum clearance required on all sides of an item when selecting a box?
+      AnswerIndex: 1
+      Choices:
+      - 2 centimetres
+      - 5 centimetres
+      - 10 centimetres
+      - 15 centimetres
+      IsCorrect: 0
+    - Question: What are the dimensions of the Medium carton at the packing station?
+      AnswerIndex: 1
+      Choices:
+      - 30x20x15 cm
+      - 45x35x25 cm
+      - 60x50x40 cm
+      - 50x40x30 cm
+      IsCorrect: 0
+    - Question: Why is an oversized box a problem?
+      AnswerIndex: 2
+      Choices:
+      - It is more expensive to purchase
+      - It does not fit on the outbound conveyor
+      - It wastes cardboard, increases dimensional weight charges, and allows items to shift in transit
+      - It is too heavy to seal correctly
+      IsCorrect: 0
+    - Question: What is the correct sealing method for a carton?
+      AnswerIndex: 2
+      Choices:
+      - One strip along the centre seam
+      - Two strips along each side seam
+      - The H-tape pattern
+      - An X-tape pattern across the top
+      IsCorrect: 0
+    - Question: What does the H-tape sealing pattern consist of?
+      AnswerIndex: 1
+      Choices:
+      - One horizontal strip and one vertical strip
+      - One strip along the centre seam and one strip along each end seam
+      - Two parallel strips along the centre seam
+      - Four strips forming a rectangle around the box top
+      IsCorrect: 0
+    - Question: How do you confirm there is sufficient void fill in a box?
+      AnswerIndex: 1
+      Choices:
+      - The fill material is visible above the top of the item
+      - Close the box and shake it - nothing should move
+      - The box is at least three-quarters full
+      - Weigh the box before and after adding fill
+      IsCorrect: 0
+    - Question: What three things must you check on a shipping label before applying it?
+      AnswerIndex: 2
+      Choices:
+      - Sender address, carrier tracking number, and weight
+      - SKU number, weight class, and carrier code
+      - Delivery address, weight class, and carrier code
+      - Delivery address, item description, and estimated delivery date
+      IsCorrect: 0
+    - Question: How must a box be placed on the outbound conveyor?
+      AnswerIndex: 2
+      Choices:
+      - Label facing down to protect it from damage
+      - Label facing to the side for side-scanner access
+      - Label facing upward
+      - Any orientation as long as the box is stable
+      IsCorrect: 0
+    - Question: When should a multi-item order be split into two boxes?
+      AnswerIndex: 2
+      Choices:
+      - When the items are different product types
+      - When the customer requests separate packaging
+      - Only when a single box would need to be oversized to fit all items
+      - When the combined weight exceeds 5 kg
+      IsCorrect: 0
+    - Question: Where must a fragile item be placed on the outbound conveyor?
+      AnswerIndex: 2
+      Choices:
+      - At the front of the queue for priority handling
+      - In the middle of the queue
+      - At the back of the queue, not stacked under heavier items
+      - In a separate fragile items lane
+      IsCorrect: 0
+    - Question: Approximately how much more does a returned parcel cost compared to the original delivery?
+      AnswerIndex: 2
+      Choices:
+      - Equal to the original delivery cost
+      - Twice the original delivery cost
+      - Three times the original delivery cost
+      - Five times the original delivery cost
+      IsCorrect: 0
+    - Question: Which of these is NOT one of the three packing elements checked in a quality review?
+      AnswerIndex: 3
+      Choices:
+      - Label accuracy
+      - Void fill adequacy
+      - Sealing method
+      - Item expiry date
+      IsCorrect: 0
+  - ID: 4
+    Data:
+    - Question: How much unnecessary travel distance can unoptimised picking routes add compared to a planned route?
+      AnswerIndex: 2
+      Choices:
+      - 5 to 10 percent
+      - 10 to 20 percent
+      - 20 to 40 percent
+      - 40 to 60 percent
+      IsCorrect: 0
+    - Question: What does zone sequencing mean?
+      AnswerIndex: 2
+      Choices:
+      - Picking items in the order they appear on the pick list
+      - Picking the nearest item first regardless of zone
+      - Picking all items in one zone before moving to the next
+      - Picking items by weight from lightest to heaviest
+      IsCorrect: 0
+    - Question: In the simulation warehouse, what colour marks Zone A?
+      AnswerIndex: 0
+      Choices:
+      - Blue
+      - Amber
+      - Green
+      - Red
+      IsCorrect: 0
+    - Question: In the simulation warehouse, what colour marks Zone C?
+      AnswerIndex: 2
+      Choices:
+      - Blue
+      - Amber
+      - Green
+      - Red
+      IsCorrect: 0
+    - Question: What is the rule for batching two orders together?
+      AnswerIndex: 2
+      Choices:
+      - Both orders must be entirely within the same zone
+      - Both orders must have fewer than five items each
+      - Both orders must share at least one zone
+      - Both orders must have the same delivery carrier
+      IsCorrect: 0
+    - Question: When should two orders NOT be batched?
+      AnswerIndex: 1
+      Choices:
+      - When both orders contain items in Zone A
+      - When the orders do not share at least one zone
+      - When the combined pick count exceeds 10 items
+      - When one order is a priority dispatch
+      IsCorrect: 0
+    - Question: A forklift is blocking Aisle B. What is the optimal response?
+      AnswerIndex: 1
+      Choices:
+      - Wait at the aisle entrance until the forklift clears
+      - Complete Zone C picks while the forklift clears Zone B, then return
+      - Report the forklift to a supervisor and wait
+      - Skip the picks in Aisle B entirely
+      IsCorrect: 0
+    - Question: In the path comparison display, what does the green line represent?
+      AnswerIndex: 1
+      Choices:
+      - Your actual picking route
+      - The optimal picking route
+      - The zone boundaries
+      - The forklift movement path
+      IsCorrect: 0
+    - Question: In the path comparison display, what does the amber line represent?
+      AnswerIndex: 1
+      Choices:
+      - The optimal picking route
+      - Your actual picking route
+      - The zone with the most picks
+      - An alternative suggested route
+      IsCorrect: 0
+    - Question: How long should an experienced picker spend planning their route before moving?
+      AnswerIndex: 3
+      Choices:
+      - 1 minute
+      - 2 minutes
+      - 5 minutes
+      - Under 30 seconds
+      IsCorrect: 0
+    - Question: What deviation threshold does the AI use to flag route inefficiency in path comparison?
+      AnswerIndex: 2
+      Choices:
+      - More than 1 metre from the optimal route
+      - More than 5 metres from the optimal route
+      - More than 2 metres from the optimal route
+      - More than 10 metres from the optimal route
+      IsCorrect: 0
+    - Question: According to this module, what is efficiency in a warehouse primarily about?
+      AnswerIndex: 2
+      Choices:
+      - Moving faster to complete more picks per hour
+      - Reducing the number of items on each pick list
+      - Moving less by planning and sequencing routes optimally
+      - Using technology to replace manual navigation
+      IsCorrect: 0

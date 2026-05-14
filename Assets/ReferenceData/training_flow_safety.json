@@ -1,0 +1,208 @@
+[
+  {
+    "Title": "Welcome to Warehouse Safety Training",
+    "Description": "Before you can work on the warehouse floor, you must complete this safety module. Warehouses are active industrial environments with moving vehicles, heavy loads, and potential hazards at every turn. This training exists because the most common causes of warehouse injuries — slips, falling objects, and collisions — are almost entirely preventable. Completing this module and scoring 80% or above on the safety assessment will unlock all operational training modules. Let us begin.",
+    "VoiceOver": { "name": "Safety-01", "hideFlags": "NotEditable" },
+    "HasChallenges": false,
+    "IsInOrder": true,
+    "name": "S01_Welcome_Safety_Training",
+    "hideFlags": "None",
+    "TutorialChallengeLists": []
+  },
+  {
+    "Title": "Your PPE — What It Is and Why It Matters",
+    "Description": "Personal Protective Equipment (PPE) is your first line of defence in any warehouse environment. In this facility, the mandatory PPE is a hard hat and a high-visibility vest. The hard hat protects you from objects falling from racking — a risk in any environment where items are stored above head height. The high-vis vest ensures forklift operators and colleagues can see you at all times, especially in low-light areas or around blind corners. You should never enter the operational floor without both items. The PPE station is the yellow rack near the entrance. Walk to it now.",
+    "VoiceOver": { "name": "Safety-02", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S02_PPE_Introduction",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Walk to the PPE Station",
+        "ChallengeTriggerName": "TRIGGER_Safety_ReachPPEStation",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Equip Your Hard Hat",
+    "Description": "The hard hat is on the top hook of the PPE station. Reach out with your controller and grip it to pick it up, then bring it to head height and release it to place it on. You will see a confirmation indicator when it is correctly equipped. A hard hat must be worn at all times on the warehouse floor — not carried, not left on a shelf, not worn backwards. In a real facility, being found without a hard hat in a designated PPE zone is a disciplinary offence and in many jurisdictions a legal violation.",
+    "VoiceOver": { "name": "Safety-03", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S03_Equip_Hard_Hat",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Equip the Hard Hat",
+        "ChallengeTriggerName": "TRIGGER_Safety_EquipHardHat",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Equip Your High-Visibility Vest",
+    "Description": "The high-vis vest hangs below the hard hat on the PPE station. Pick it up and equip it the same way. High-visibility clothing is rated by class — Class 2 vests (fluorescent yellow or orange with reflective strips) are the minimum standard in most warehouse environments. The reflective strips are critical in poorly lit zones and allow forklift operators to see you from up to 100 metres away. Once both items are equipped, you are cleared to enter the operational floor.",
+    "VoiceOver": { "name": "Safety-04", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S04_Equip_HiVis_Vest",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Equip the High-Vis Vest",
+        "ChallengeTriggerName": "TRIGGER_Safety_EquipHiVis",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Hazard Walk — What to Look For",
+    "Description": "You are now on the warehouse floor. Four safety hazards have been staged in this environment. Your task is to walk through the warehouse, identify each hazard, and interact with it to log it. In a real facility, a logged hazard triggers an immediate response — a supervisor is notified, the area is cordoned off, and the hazard is resolved before work continues. The four hazards in this environment represent the most common warehouse incidents: wet floors, blocked exits, unstable racking, and unsecured loads. Failing to identify and report any of these in a live environment puts every person on the floor at risk.",
+    "VoiceOver": { "name": "Safety-05", "hideFlags": "NotEditable" },
+    "HasChallenges": false,
+    "IsInOrder": true,
+    "name": "S05_Hazard_Walk_Introduction",
+    "hideFlags": "None",
+    "TutorialChallengeLists": []
+  },
+  {
+    "Title": "Identify Hazard 1 — Wet Floor",
+    "Description": "Near Aisle B you will see a yellow wet floor sign next to a spill on the concrete. Wet floors are a leading cause of slip-and-fall injuries in warehouse environments. The risk increases significantly when workers are moving quickly, carrying loads, or wearing footwear without adequate grip. When you see a wet floor, do not walk through it. Confirm the sign is in place, keep others away, and report it to a supervisor so the spill can be cleaned. Point your controller at the hazard and press trigger to log it.",
+    "VoiceOver": { "name": "Safety-06", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S06_Hazard_Wet_Floor",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Log the Wet Floor Hazard",
+        "ChallengeTriggerName": "TRIGGER_Safety_LogWetFloor",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Identify Hazard 2 — Blocked Fire Exit",
+    "Description": "Near the south wall you will see a fire exit door. A pallet has been left directly in front of it. A blocked fire exit is one of the most serious safety violations in any workplace — in an emergency, seconds matter, and a blocked exit can turn an evacuable situation into a fatal one. Fire exits must be kept clear at all times, even temporarily. There is no such thing as a short-term block. If you see a blocked exit, do not move the obstruction yourself if it involves heavy goods — report it immediately so it can be cleared safely. Log this hazard now.",
+    "VoiceOver": { "name": "Safety-07", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S07_Hazard_Blocked_Exit",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Log the Blocked Fire Exit",
+        "ChallengeTriggerName": "TRIGGER_Safety_LogBlockedExit",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Identify Hazard 3 — Unstable Pallet Stack",
+    "Description": "In the storage area you will see a pallet stack that is leaning. Unstable stacking is a major cause of crush injuries in warehouses. Products should always be stacked with the heaviest items at the bottom, stacked vertically without overhang, and secured with stretch wrap if they exceed a single pallet height. A leaning stack should never be approached from the direction of the lean. Log this hazard now and remember the rule: if in doubt, do not touch it — report it and keep others away.",
+    "VoiceOver": { "name": "Safety-08", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S08_Hazard_Unstable_Stack",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Log the Unstable Pallet Stack",
+        "ChallengeTriggerName": "TRIGGER_Safety_LogUnstableStack",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Identify Hazard 4 — Unsecured Racking",
+    "Description": "On Aisle A you will see a section of racking with a missing upright guard at the base. Racking guards protect the structural uprights from forklift impact — without them, a single collision can cause a progressive racking collapse that brings down an entire aisle. Racking inspections should be carried out weekly by a designated person, and any damaged or missing component must be tagged out and reported before the aisle is used. Log this hazard to complete the hazard walk.",
+    "VoiceOver": { "name": "Safety-09", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S09_Hazard_Unsecured_Racking",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Log the Unsecured Racking",
+        "ChallengeTriggerName": "TRIGGER_Safety_LogRacking",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Emergency Procedures — Fire Extinguisher Location",
+    "Description": "You have logged all four hazards. Now we cover emergency procedures. Every person on the warehouse floor must know three things before starting their shift: where the nearest fire extinguisher is, where the muster point is, and which route to take to get there. The fire extinguisher in this zone is mounted on the wall near the exit corridor. It is a CO2 extinguisher — suitable for electrical fires, which are the most common warehouse fire type. Walk to the extinguisher and interact with it to register its location.",
+    "VoiceOver": { "name": "Safety-10", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S10_Fire_Extinguisher_Location",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Locate and Register the Fire Extinguisher",
+        "ChallengeTriggerName": "TRIGGER_Safety_RegisterExtinguisher",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Emergency Procedures — Evacuation Route",
+    "Description": "Now follow the green floor arrows to the muster point outside the warehouse. In a real emergency, you do not stop to collect belongings, you do not use lifts, and you do not re-enter the building under any circumstances until a supervisor or emergency services confirm it is safe. The muster point is where a headcount is taken to confirm everyone has evacuated. Knowing this route before an emergency occurs is the difference between an orderly evacuation and a dangerous one. Follow the route now.",
+    "VoiceOver": { "name": "Safety-11", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S11_Evacuation_Route",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Follow the Evacuation Route to the Muster Point",
+        "ChallengeTriggerName": "TRIGGER_Safety_ReachMusterPoint",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Load Safety — Stable vs Unstable",
+    "Description": "Back on the floor, you will see two pallet stacks side by side. One is correctly stacked — heavy items on the bottom, vertically aligned, fully wrapped. The other has lighter items on the bottom, an overhanging top layer, and no stretch wrap. Your job is to identify which stack is safe to move. Incorrectly moving an unstable load is one of the most dangerous acts in a warehouse — it risks injury to yourself, colleagues nearby, and damage to the racking system. Examine both stacks and select the safe one.",
+    "VoiceOver": { "name": "Safety-12", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S12_Load_Safety_Check",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Identify the Safe Pallet Stack",
+        "ChallengeTriggerName": "TRIGGER_Safety_IdentifySafeStack",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Safety Knowledge Assessment",
+    "Description": "You have completed all safety practical stages. Now test your understanding with a 10-question knowledge assessment. The questions cover PPE requirements, hazard identification, emergency procedures, and load safety — everything you have just practised. A score of 80 percent or above — 8 out of 10 correct — is required to pass this module and unlock the operational training modules. Take your time, read each question carefully, and apply what you have learned. You can retry the assessment if you do not pass on the first attempt.",
+    "VoiceOver": { "name": "Safety-13", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "S13_Safety_Assessment",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Complete the Safety Knowledge Assessment",
+        "ChallengeTriggerName": "TRIGGER_Safety_AssessmentComplete",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Safety Module Complete",
+    "Description": "Congratulations on completing the Warehouse Safety module. You have demonstrated your understanding of PPE requirements, hazard identification, emergency procedures, and load safety — the four pillars that keep every person on this floor protected. The habits you build in safety training carry into every shift you work. Stay aware, speak up when you see a hazard, and look out for your colleagues. Operational training modules are now unlocked. Choose your next module to continue.",
+    "VoiceOver": { "name": "Safety-14", "hideFlags": "NotEditable" },
+    "HasChallenges": false,
+    "IsInOrder": true,
+    "name": "S14_Safety_Module_Complete",
+    "hideFlags": "None",
+    "TutorialChallengeLists": []
+  }
+]

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M1_07_Error_Recovery
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Error Recovery \u2014 Catching a Mis-Pick"
+  <Description>k__BackingField: Before you submit your tote, the system has flagged
+    a potential error. One of the items in your tote does not match the pick list.
+    This is a deliberate training scenario, in a real facility, mis-picks are caught
+    at the packing station or, worse, by the customer. Your job is to check each
+    item in the tote against the pick list, identify the incorrect item, remove it,
+    and replace it with the correct one. Mis-picks that reach the customer cost an
+    average of 12 to 15 times more to resolve than mis-picks caught on the warehouse
+    floor.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 074d7016053bf3944bca5e36394f4068, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Identify and Remove the Incorrect Item
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M1_RemoveMisPick
+    <IsComplete>k__BackingField: 0
+  - <ChallengeTitle>k__BackingField: Replace with the Correct Item
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M1_ReplaceCorrectItem
+    <IsComplete>k__BackingField: 0

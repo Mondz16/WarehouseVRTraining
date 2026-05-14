@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mcpforunity": {
+      "command": "C:\\Users\\chris\\.local\\bin\\uvx.exe",
+      "args": [
+        "--offline",
+        "--from", "mcpforunityserver==9.6.8",
+        "mcp-for-unity",
+        "--unity-instance-token", "d3d544812e79403fbf7063f152b0f1c0"
+      ]
+    }
+  }
+}

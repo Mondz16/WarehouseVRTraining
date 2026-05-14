@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M1_05_Quantity_Pick
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: Picking the Correct Quantity
+  <Description>k__BackingField: The pick list asks for 3 units of this item. The
+    bin contains a mixture of this product and a similar-looking product. Count carefully
+    before picking, do not grab a handful and assume. In real warehouse operations,
+    quantity errors are the second most common type of mis-pick after wrong SKU,
+    and they are harder to detect downstream because the product description may
+    match. Pick exactly 3 units and place them into the virtual tote on your left
+    side. The tote will count each item as it is placed.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 86a0eb36dcd3d264aac8192bdfcce33f, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 0
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Pick Exactly 3 Units into the Tote
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M1_PickQuantity_3
+    <IsComplete>k__BackingField: 0

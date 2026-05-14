@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: S04_Equip_HiVis_Vest
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: Equip Your High-Visibility Vest
+  <Description>k__BackingField: The high-vis vest hangs below the hard hat on the
+    PPE station. Pick it up and equip it the same way. High-visibility clothing is
+    rated by class, Class 2 vests (fluorescent yellow or orange with reflective strips)
+    are the minimum standard in most warehouse environments. The reflective strips
+    are critical in poorly lit zones and allow forklift operators to see you from
+    up to 100 metres away. Once both items are equipped, you are cleared to enter
+    the operational floor.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: fd0668cebeb20374780d285b343be799, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Equip the High-Vis Vest
+    <ChallengeTriggerName>k__BackingField: TRIGGER_Safety_EquipHiVis
+    <IsComplete>k__BackingField: 0

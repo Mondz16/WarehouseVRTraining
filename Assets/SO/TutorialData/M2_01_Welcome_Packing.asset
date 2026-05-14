@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M2_01_Welcome_Packing
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: Welcome to Packing and Dispatch
+  <Description>k__BackingField: 'Packing is the final quality gate before a customer
+    order leaves the building. A correctly packed order arrives on time, undamaged,
+    and exactly as the customer expected. A poorly packed order generates returns,
+    complaints, and re-delivery costs that can exceed the value of the original order.
+    In this module you will learn the four core packing skills: selecting the correct
+    box size, applying the right amount of void fill, verifying the shipping label,
+    and loading the outbound conveyor correctly. Every decision you make at the packing
+    bench affects whether the customer has a good or bad experience.'
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: b25dde2553f5fc448a79a4820bc2b16f, type: 3}
+  <HasChallenges>k__BackingField: 0
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists: []

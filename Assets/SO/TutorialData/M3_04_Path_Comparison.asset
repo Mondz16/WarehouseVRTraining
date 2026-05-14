@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M3_04_Path_Comparison
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Path Comparison \u2014 Your Route vs Optimal"
+  <Description>k__BackingField: Your 5-item pick is complete. The AI has calculated
+    the optimal route for this pick list and overlaid it on the warehouse floor.
+    The green line is the optimal path. The amber line is your actual path. Study
+    the difference. The AI will highlight up to three specific inefficiencies, points
+    where you deviated from the optimal route by more than 2 metres or where you
+    entered a zone you had already left. Understanding why the optimal route is better
+    prepares you to plan more effectively on your next pick.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: df7095e414143df48b35fcbcf7d6e2a4, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Review the AI Path Comparison
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M3_PathComparisonReviewed
+    <IsComplete>k__BackingField: 0

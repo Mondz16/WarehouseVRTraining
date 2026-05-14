@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59de6d2feb00de43a86ff8607258b14, type: 3}
+  m_Name: TutorialDataCollectionSO
+  m_EditorClassIdentifier: Assembly-CSharp::TutorialDataCollectionSO
+  _tutorialDataList:
+  - <ID>k__BackingField: 1
+    <DataList>k__BackingField:
+    - {fileID: 11400000, guid: 81f9dc92aa9e3fe45ae4e133f90b5f3b, type: 2}
+    - {fileID: 11400000, guid: 5f5d4987dd873044eaefe5909e947c98, type: 2}
+    - {fileID: 11400000, guid: ecad9e35b545623459bafc48585b6837, type: 2}
+    - {fileID: 11400000, guid: 3613ce933346b9a49b295288572b858a, type: 2}
+    - {fileID: 11400000, guid: 1a501686daba89c429c5bad49ae7fc06, type: 2}
+    - {fileID: 11400000, guid: 556ce73696de4db4dbaadde98db0de44, type: 2}
+    - {fileID: 11400000, guid: 79c09c9fe01f48140b560ab57ce47dec, type: 2}
+    - {fileID: 11400000, guid: 71abe9c4719f03740a28a841908a1502, type: 2}
+    - {fileID: 11400000, guid: 0eaff7b4a50348b42a38e3c010bea0d4, type: 2}
+    - {fileID: 11400000, guid: 79a2bb9764099ab42a4291a2bd6592c8, type: 2}
+    - {fileID: 11400000, guid: 9ede3abb9fc87be429178bf6cf4a0aa8, type: 2}
+    - {fileID: 11400000, guid: 2b82f097f30efa5439059a8d4874971e, type: 2}
+    - {fileID: 11400000, guid: b9f3ef96cfecbc742bcc01715ff29fe2, type: 2}
+    - {fileID: 11400000, guid: 67f5ba13eebe16b4d88e3fe01084e2df, type: 2}
+  - <ID>k__BackingField: 2
+    <DataList>k__BackingField:
+    - {fileID: 11400000, guid: 7595df8af985db14998b749f42f384ff, type: 2}
+    - {fileID: 11400000, guid: 68e8849bacd58744a946a2314d8de9ff, type: 2}
+    - {fileID: 11400000, guid: 4a4542bfbcba77e47af11c11d727f3c2, type: 2}
+    - {fileID: 11400000, guid: 8f16cd62639f61e41bede4af932aff9d, type: 2}
+    - {fileID: 11400000, guid: 83c03fa76fbf53c47b528a6e91e4690e, type: 2}
+    - {fileID: 11400000, guid: 92a60ffb63eded845b567240e33de91b, type: 2}
+    - {fileID: 11400000, guid: 85321b2233985d245bbafa662ef65c00, type: 2}
+    - {fileID: 11400000, guid: caeb5aa8ae0e6b14e8ba03b10c4d3a2a, type: 2}
+    - {fileID: 11400000, guid: 183171b95eb4aef4bb9da8d587fb92cc, type: 2}
+    - {fileID: 11400000, guid: f39b26b2ec9ea244680a47ce38104f99, type: 2}
+  - <ID>k__BackingField: 3
+    <DataList>k__BackingField:
+    - {fileID: 11400000, guid: faec8142a12fcf8479b62df92beb1662, type: 2}
+    - {fileID: 11400000, guid: 51a7a93973d80e440a0e3685222b5f80, type: 2}
+    - {fileID: 11400000, guid: b15201e8d41fc0c46be6fe58eddda279, type: 2}
+    - {fileID: 11400000, guid: 0a8490cfbe552814aac9c3d90ab8b057, type: 2}
+    - {fileID: 11400000, guid: 00ba23798b6a0c640b29943edd85b2a7, type: 2}
+    - {fileID: 11400000, guid: 76176ea3fe80d3f40b02f7c0b5f37214, type: 2}
+    - {fileID: 11400000, guid: 473e9a1597fce3c46a604f55bd5504a1, type: 2}
+    - {fileID: 11400000, guid: 8049b80bc54283743bc9c96c2ac557c7, type: 2}
+    - {fileID: 11400000, guid: 371972b4aab8e954d8e880deeb874640, type: 2}
+    - {fileID: 11400000, guid: 2a6dd8cf35e4e204fb911caab9e60c42, type: 2}
+    - {fileID: 11400000, guid: 8af5fa99fb00bc34ab0084d78857493d, type: 2}
+  - <ID>k__BackingField: 4
+    <DataList>k__BackingField:
+    - {fileID: 11400000, guid: 2f62d2647e64cf940b834fd1b24fcba9, type: 2}
+    - {fileID: 11400000, guid: d376c0bb8aaae4048989c987968082eb, type: 2}
+    - {fileID: 11400000, guid: 3a418f61974ff344ab8d22d6a568db4c, type: 2}
+    - {fileID: 11400000, guid: 3e37ef4edc22887409d4bb0003c4950a, type: 2}
+    - {fileID: 11400000, guid: e2e03b45d5b677b41a69a4d10076455c, type: 2}
+    - {fileID: 11400000, guid: dc4abb809bd08e440a0a3e01b74bb46b, type: 2}
+    - {fileID: 11400000, guid: b95cd9d1d490641469c6560a08e3d381, type: 2}
+    - {fileID: 11400000, guid: ef1e069ee65da6840811fb95840f0c01, type: 2}
+    - {fileID: 11400000, guid: 189f08a54e6d81b4e94e2c10b9a17087, type: 2}
+    - {fileID: 11400000, guid: c23068ff06e5b9941bd6bdc33856db23, type: 2}

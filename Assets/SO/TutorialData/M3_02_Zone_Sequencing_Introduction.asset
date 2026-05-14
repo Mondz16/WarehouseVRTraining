@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M3_02_Zone_Sequencing_Introduction
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: Understanding Zone Sequencing
+  <Description>k__BackingField: 'This warehouse is divided into three zones, Zone
+    A on the left, Zone B in the centre, and Zone C on the right. Zone sequencing
+    means picking all items in Zone A before moving to Zone B, and all items in Zone
+    B before moving to Zone C, regardless of the order they appear on the pick list.
+    The principle is simple: entering and leaving a zone costs time. Every unnecessary
+    re-entry is wasted travel. Look at the warehouse floor, the zone boundaries are
+    marked with coloured lines. Zone A is blue, Zone B is amber, Zone C is green.
+    Familiarise yourself with the layout before we continue.'
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 9678061ddf1236d46bda7bed88035ae9, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Confirm Zone Layout Understanding
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M3_ZoneLayoutConfirmed
+    <IsComplete>k__BackingField: 0

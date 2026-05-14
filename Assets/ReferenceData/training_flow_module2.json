@@ -1,0 +1,181 @@
+[
+  {
+    "Title": "Welcome to Packing and Dispatch",
+    "Description": "Packing is the final quality gate before a customer order leaves the building. A correctly packed order arrives on time, undamaged, and exactly as the customer expected. A poorly packed order generates returns, complaints, and re-delivery costs that can exceed the value of the original order. In this module you will learn the four core packing skills: selecting the correct box size, applying the right amount of void fill, verifying the shipping label, and loading the outbound conveyor correctly. Every decision you make at the packing bench affects whether the customer has a good or bad experience.",
+    "VoiceOver": { "name": "Module2-01", "hideFlags": "NotEditable" },
+    "HasChallenges": false,
+    "IsInOrder": true,
+    "name": "M2_01_Welcome_Packing",
+    "hideFlags": "None",
+    "TutorialChallengeLists": []
+  },
+  {
+    "Title": "The Packing Station Layout",
+    "Description": "Walk to the packing bench in the centre of the dispatch area. The bench has three zones. On your left are the three carton sizes — Small (30x20x15 cm), Medium (45x35x25 cm), and Large (60x50x40 cm). In the centre is your working area where you will assemble and seal the order. On your right is the label printer and the outbound conveyor. Your order details panel is mounted above the bench and shows the item dimensions, weight, and destination. Take a moment to locate all three zones before we begin.",
+    "VoiceOver": { "name": "Module2-02", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M2_02_Station_Layout",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Locate All Three Station Zones",
+        "ChallengeTriggerName": "TRIGGER_M2_StationLayoutConfirmed",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Box Selection — The Minimum Fit Rule",
+    "Description": "The rule for box selection is straightforward: choose the smallest box that fits the item with at least 5 centimetres of clearance on all sides for void fill material. Oversized boxes waste cardboard, increase dimensional weight charges from carriers, and allow items to shift in transit — which causes damage. Undersized boxes compress the item, break the carton, and create an unstable package. Your first item is displayed in the centre of the bench. Check its dimensions on the order panel and select the correct carton size from the three options on your left.",
+    "VoiceOver": { "name": "Module2-03", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M2_03_Box_Selection",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Select the Correct Carton Size",
+        "ChallengeTriggerName": "TRIGGER_M2_CorrectBoxSelected",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Void Fill — Why It Matters",
+    "Description": "Void fill is the material placed around an item inside the box to prevent movement during transit. Without sufficient void fill, the item shifts, impacts the box walls, and can be damaged — even in a well-built carton. The required amount of void fill is enough to eliminate all internal movement — if you close the box and shake it, nothing should move. Apply void fill to the base of the box, place the item in the centre, then fill the remaining space on all sides and over the top. Your void fill dispenser is on the right side of the bench. Apply the correct amount now.",
+    "VoiceOver": { "name": "Module2-04", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M2_04_Void_Fill_Application",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Apply Correct Void Fill to the Base",
+        "ChallengeTriggerName": "TRIGGER_M2_VoidFillBase",
+        "IsComplete": false
+      },
+      {
+        "ChallengeTitle": "Place Item and Fill Remaining Space",
+        "ChallengeTriggerName": "TRIGGER_M2_VoidFillTop",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Sealing the Box",
+    "Description": "With the item packed and void fill applied, seal the box using the tape gun on the bench. The correct sealing method is the H-tape pattern — one strip along the centre seam and one strip along each end seam, forming an H shape. This provides maximum strength at the points where cartons are most likely to open under load. A single strip along the centre seam is not sufficient for transit — carriers handle thousands of parcels per hour and a poorly sealed box will open. Apply the H-tape pattern now.",
+    "VoiceOver": { "name": "Module2-05", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M2_05_Sealing_the_Box",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Apply the H-Tape Sealing Pattern",
+        "ChallengeTriggerName": "TRIGGER_M2_BoxSealed",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Label Verification — Three Things to Check",
+    "Description": "The shipping label has been printed and is ready on the label printer to your right. Before you apply it, verify three things: the delivery address matches the order on your panel, the weight class on the label is consistent with the item weight, and the carrier code is correct. Applying a label with an incorrect address sends the parcel to the wrong customer. An incorrect weight class results in a carrier surcharge or return. Scan the label with the virtual scanner to perform the verification check, then apply it to the largest flat face of the box.",
+    "VoiceOver": { "name": "Module2-06", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M2_06_Label_Verification",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Scan and Verify the Shipping Label",
+        "ChallengeTriggerName": "TRIGGER_M2_LabelVerified",
+        "IsComplete": false
+      },
+      {
+        "ChallengeTitle": "Apply the Label to the Box",
+        "ChallengeTriggerName": "TRIGGER_M2_LabelApplied",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Conveyor Loading — Orientation Matters",
+    "Description": "Your packed and labelled box is ready to go onto the outbound conveyor. Two rules apply when loading the conveyor. First, the label must face upward — scanners at the sortation facility read the label from above, and a face-down label means the parcel will be manually handled, which delays delivery. Second, if the box is marked as fragile, it must be placed at the back of the conveyor queue, not stacked under heavier items. Place your box on the conveyor now with the label facing up.",
+    "VoiceOver": { "name": "Module2-07", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M2_07_Conveyor_Loading",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Place Box on Conveyor Label Face Up",
+        "ChallengeTriggerName": "TRIGGER_M2_BoxOnConveyor",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Multi-Item Order — Consolidation Decision",
+    "Description": "Your next order has 3 items. Before you start packing, decide whether to pack them into one box or split them across multiple boxes. The consolidation rule is: use one box if all items fit within the minimum fit rule with correct void fill. Split into two boxes only if a single box would need to be oversized. Check the item dimensions on the order panel, compare them to the carton sizes, and make your decision. Unnecessary splitting increases material cost and label cost per order.",
+    "VoiceOver": { "name": "Module2-08", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M2_08_Multi_Item_Consolidation",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Decide Box Configuration and Pack the Order",
+        "ChallengeTriggerName": "TRIGGER_M2_MultiItemPacked",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Error Identification — Spot the Packing Mistake",
+    "Description": "A pre-packed box has arrived at your station from a previous shift. The system has flagged it for quality review before dispatch. Examine the box carefully — there is at least one packing error present. It may be a label issue, a sealing issue, or a void fill issue. Open the box using the inspect tool, check all three elements against the order on your panel, and identify the error. Catching packing errors before dispatch is always preferable — a returned parcel costs an average of three times the original delivery cost to process.",
+    "VoiceOver": { "name": "Module2-09", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M2_09_Error_Identification",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Identify the Packing Error",
+        "ChallengeTriggerName": "TRIGGER_M2_ErrorIdentified",
+        "IsComplete": false
+      },
+      {
+        "ChallengeTitle": "Correct the Error and Reseal",
+        "ChallengeTriggerName": "TRIGGER_M2_ErrorCorrected",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Packing and Dispatch Assessment",
+    "Description": "You have completed all practical stages of the Packing and Dispatch module. The knowledge assessment covers box selection, void fill, label verification, conveyor loading, consolidation decisions, and error identification. 12 questions. 80 percent to pass. Apply the rules you have learned — minimum fit, H-tape seal, label face up, and always verify before you dispatch.",
+    "VoiceOver": { "name": "Module2-10", "hideFlags": "NotEditable" },
+    "HasChallenges": true,
+    "IsInOrder": true,
+    "name": "M2_10_Assessment",
+    "hideFlags": "None",
+    "TutorialChallengeLists": [
+      {
+        "ChallengeTitle": "Complete the Packing and Dispatch Assessment",
+        "ChallengeTriggerName": "TRIGGER_M2_AssessmentComplete",
+        "IsComplete": false
+      }
+    ]
+  },
+  {
+    "Title": "Module 2 Complete — Well Done",
+    "Description": "Congratulations on completing the Packing and Dispatch module. Every order you pack correctly is a customer who receives exactly what they ordered, on time and undamaged. The decisions you make at the packing bench — the right box, the right fill, the right label, the right orientation — are small in isolation but significant in volume. A team of packers making consistently correct decisions is the difference between a high-performing dispatch operation and one that spends its day processing returns. You are ready to move to the next module.",
+    "VoiceOver": { "name": "Module2-11", "hideFlags": "NotEditable" },
+    "HasChallenges": false,
+    "IsInOrder": true,
+    "name": "M2_11_Module_Complete",
+    "hideFlags": "None",
+    "TutorialChallengeLists": []
+  }
+]

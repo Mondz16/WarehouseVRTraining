@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M3_09_Assessment
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: Route Optimisation Assessment
+  <Description>k__BackingField: The knowledge assessment for this module covers zone
+    sequencing, batched picking principles, congestion response, and route planning.
+    12 questions. 80 percent to pass. The questions are drawn from the scenarios
+    you completed, the rules for batching orders, when not to batch, how to respond
+    to a blocked aisle, and how to read the path comparison data.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: c2d517c0c49ef8e47a4a56f507fb76e8, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Complete the Route Optimisation Assessment
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M3_AssessmentComplete
+    <IsComplete>k__BackingField: 0

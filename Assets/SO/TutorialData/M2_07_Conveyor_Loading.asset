@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M2_07_Conveyor_Loading
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Conveyor Loading \u2014 Orientation Matters"
+  <Description>k__BackingField: Your packed and labelled box is ready to go onto
+    the outbound conveyor. Two rules apply when loading the conveyor. First, the
+    label must face upward. Scanners at the sortation facility read the label from
+    above, and a face-down label means the parcel will be manually handled, which
+    delays delivery. Second, if the box is marked as fragile, it must be placed at
+    the back of the conveyor queue, not stacked under heavier items. Place your box
+    on the conveyor now with the label facing up.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 3b640796d19eb0a44b7fd1b270e7f33d, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Place Box on Conveyor Label Face Up
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M2_BoxOnConveyor
+    <IsComplete>k__BackingField: 0

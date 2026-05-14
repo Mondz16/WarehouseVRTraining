@@ -1,0 +1,35 @@
+﻿// ----------------------------------------------------------------------------
+// SOOP Framework
+// 
+// Original
+// Author:	Ryan Hipple
+// Date:	10/04/17
+//
+// Author: 	Scott Cameron
+// Date:	03/14/18
+// ----------------------------------------------------------------------------
+
+using UnityEditor;
+using UnityEngine;
+
+namespace SOOP.Events
+{
+    [CustomEditor(typeof(GameEventArgBool))]
+    public class EventArgBoolEditor : Editor
+    {
+        private bool EditorValue;
+
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+
+            GUI.enabled = Application.isPlaying;
+
+            EditorValue = EditorGUILayout.Toggle("Editor Value", EditorValue);
+
+            GameEventArgBool e = target as GameEventArgBool;
+            if (GUILayout.Button("Raise"))
+                e.Raise(EditorValue);
+        }
+    }
+}

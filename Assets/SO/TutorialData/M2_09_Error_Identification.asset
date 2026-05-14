@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M2_09_Error_Identification
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Error Identification \u2014 Spot the Packing Mistake"
+  <Description>k__BackingField: A pre-packed box has arrived at your station from
+    a previous shift. The system has flagged it for quality review before dispatch.
+    Examine the box carefully, there is at least one packing error present. It may
+    be a label issue, a sealing issue, or a void fill issue. Open the box using the
+    inspect tool, check all three elements against the order on your panel, and identify
+    the error. Catching packing errors before dispatch is always preferable, a returned
+    parcel costs an average of three times the original delivery cost to process.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 3a4112c3730a1114db51143c77029eb3, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Identify the Packing Error
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M2_ErrorIdentified
+    <IsComplete>k__BackingField: 0
+  - <ChallengeTitle>k__BackingField: Correct the Error and Reseal
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M2_ErrorCorrected
+    <IsComplete>k__BackingField: 0

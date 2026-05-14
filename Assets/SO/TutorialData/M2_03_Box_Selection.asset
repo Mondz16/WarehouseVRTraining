@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M2_03_Box_Selection
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Box Selection \u2014 The Minimum Fit Rule"
+  <Description>k__BackingField: 'The rule for box selection is straightforward: choose
+    the smallest box that fits the item with at least 5 centimetres of clearance
+    on all sides for void fill material. Oversized boxes waste cardboard, increase
+    dimensional weight charges from carriers, and allow items to shift in transit
+    which causes damage. Undersized boxes compress the item, break the carton, and
+    create an unstable package. Your first item is displayed in the centre of the
+    bench. Check its dimensions on the order panel and select the correct carton
+    size from the three options on your left.'
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: f00441ff2d5c3784aba513e15bc054b7, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Select the Correct Carton Size
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M2_CorrectBoxSelected
+    <IsComplete>k__BackingField: 0

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M1_10_Module_Complete
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Module 1 Complete \u2014 Well Done"
+  <Description>k__BackingField: Congratulations on completing the Order Picking module.
+    You have learned how to read a pick list, navigate to a storage location, verify
+    a product by SKU, pick the correct quantity, recover from a mis-pick error, and
+    review your route for efficiency. These are the core skills of every picker on
+    this floor. The habits you build now, verify before you pick, plan your route
+    before you move, check your tote before you submit. This will make you a reliable
+    and efficient member of the team. Proceed to your next module when you are ready.
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 9dc8c824c4aafa84e97308033df0047c, type: 3}
+  <HasChallenges>k__BackingField: 0
+  <IsInOrder>k__BackingField: 0
+  TutorialChallengeLists: []

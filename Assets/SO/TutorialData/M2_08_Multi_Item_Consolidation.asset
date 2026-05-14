@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f98f165057dfa845a762fb8ffaa2135, type: 3}
+  m_Name: M2_08_Multi_Item_Consolidation
+  m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
+  <Title>k__BackingField: "Multi-Item Order \u2014 Consolidation Decision"
+  <Description>k__BackingField: 'Your next order has 3 items. Before you start packing,
+    decide whether to pack them into one box or split them across multiple boxes.
+    The consolidation rule is: use one box if all items fit within the minimum fit
+    rule with correct void fill. Split into two boxes only if a single box would
+    need to be oversized. Check the item dimensions on the order panel, compare them
+    to the carton sizes, and make your decision. Unnecessary splitting increases
+    material cost and label cost per order.'
+  <VoiceOver>k__BackingField: {fileID: 8300000, guid: 574c131394772294599afdec057a23c3, type: 3}
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Decide Box Configuration and Pack the Order
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M2_MultiItemPacked
+    <IsComplete>k__BackingField: 0
