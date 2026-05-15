@@ -22,7 +22,7 @@ MonoBehaviour:
     and in many jurisdictions a legal violation.
   <VoiceOver>k__BackingField: {fileID: 8300000, guid: 60fc1519c61946e4982d8aab857e0b3c, type: 3}
   <HasChallenges>k__BackingField: 1
-  <IsInOrder>k__BackingField: 1
+  <IsInOrder>k__BackingField: 0
   TutorialChallengeLists:
   - <ChallengeTitle>k__BackingField: Equip the Hard Hat
     <ChallengeTriggerName>k__BackingField: TRIGGER_Safety_EquipHardHat

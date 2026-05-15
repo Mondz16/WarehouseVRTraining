@@ -23,7 +23,7 @@ MonoBehaviour:
     is the yellow rack near the entrance. Walk to it now.
   <VoiceOver>k__BackingField: {fileID: 8300000, guid: 463b8875d8370c54aa84f03c879a4188, type: 3}
   <HasChallenges>k__BackingField: 1
-  <IsInOrder>k__BackingField: 1
+  <IsInOrder>k__BackingField: 0
   TutorialChallengeLists:
   - <ChallengeTitle>k__BackingField: Walk to the PPE Station
     <ChallengeTriggerName>k__BackingField: TRIGGER_Safety_ReachPPEStation
