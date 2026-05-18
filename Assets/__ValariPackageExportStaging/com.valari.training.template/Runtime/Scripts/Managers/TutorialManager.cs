@@ -13,12 +13,16 @@ namespace Valari.Managers
 {
     public class TutorialManager : MonoBehaviour
     {
+        [Serializable]
+        public class TutorialFlowList
+        {
+            public TrainingID ID;
+            public List<TutorialModalUI> List;
+        }
+        
         [SerializeField] private LLMHandler _llmHandler;
         [SerializeField] private Transform _startingPosition;
-        [SerializeField] private List<TutorialModalUI> _guidedInspectionList;
-        [SerializeField] private List<TutorialModalUI> _foundryTrainingModalUIList;
-        [SerializeField] private List<TutorialModalUI> _permanentCastMoldingTrainingModalUIList;
-        [SerializeField] private List<TutorialModalUI> _dieCastingTrainingModalUIList;
+        [SerializeField] private List<TutorialFlowList> _tutorialFlowList;
         [SerializeField] private UnityEvent _onGameOverEvent;
 
         private TrainingID _trainingID = TrainingID.None;
@@ -37,15 +41,14 @@ namespace Valari.Managers
 
         private void Start()
         {
-            // OnPlayOfficeAmbianceBGM();
-            OnTutorialReset(_guidedInspectionList);
-            OnTutorialReset(_foundryTrainingModalUIList);
-            OnTutorialReset(_permanentCastMoldingTrainingModalUIList);
-            OnTutorialReset(_dieCastingTrainingModalUIList);
+            // OnPlayOfficeAmbianceBGM();.
+            foreach (TutorialFlowList tutorialFlowList in _tutorialFlowList)
+                OnTutorialReset(tutorialFlowList.List);
+            
             AudioManager.instance.PlayRandomBGM();
             
             Delay.RunLater(this, 10f, () =>
-                OnStartSafetyEquipmentTraining());
+                OnStartWarehouseSafety());
         }
         public void SendPrompt(string userPrompt, bool withAudio = false)
         {
@@ -88,41 +91,42 @@ namespace Valari.Managers
         }
 
         [Button]
-        public void OnStartSafetyEquipmentTraining()
+        public void OnStartWarehouseSafety()
         {
             _trainingIndex = 0;
             _trainingID = TrainingID.WarehouseSafety;
-            _currentTutorial = _guidedInspectionList;
+            _currentTutorial = _tutorialFlowList.Find(x => x.ID == _trainingID).List;
             _currentTutorial[_trainingIndex].ShowTutorialModal();
             OnTrainingStartedEvent?.Invoke(_trainingID);
         }
 
         [Button]
-        public void OnStartSandCasting()
+        public void OnStartOrderPicking()
         {
             _trainingIndex = 0;
            // _trainingID = TrainingID.SandCasting;
-            _currentTutorial = _foundryTrainingModalUIList;
+           _trainingID = TrainingID.OrderPicking;
+           _currentTutorial = _tutorialFlowList.Find(x => x.ID == _trainingID).List;
             _currentTutorial[_trainingIndex].ShowTutorialModal();
             OnTrainingStartedEvent?.Invoke(_trainingID);
         }
 
         [Button]
-        public void OnStartPermanentMoldCasting()
+        public void OnStartRouteOptimisation()
         {
             _trainingIndex = 0;
-            //_trainingID = TrainingID.PermanentMoldCasting;
-            _currentTutorial = _permanentCastMoldingTrainingModalUIList;
+            _trainingID = TrainingID.RouteOptimisation;
+            _currentTutorial = _tutorialFlowList.Find(x => x.ID == _trainingID).List;
             _currentTutorial[_trainingIndex].ShowTutorialModal();
             OnTrainingStartedEvent?.Invoke(_trainingID);
         }
 
         [Button]
-        public void OnStartDieCasting()
+        public void OnStartPackingAndDispatch()
         {
             _trainingIndex = 0;
-            //_trainingID = TrainingID.DieCasting;
-            _currentTutorial = _dieCastingTrainingModalUIList;
+            _trainingID = TrainingID.PackingAndDispatch;
+            _currentTutorial = _tutorialFlowList.Find(x => x.ID == _trainingID).List;
             _currentTutorial[_trainingIndex].ShowTutorialModal();
             OnTrainingStartedEvent?.Invoke(_trainingID);
         }

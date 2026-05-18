@@ -22,7 +22,7 @@ MonoBehaviour:
     the operational floor.
   <VoiceOver>k__BackingField: {fileID: 8300000, guid: fd0668cebeb20374780d285b343be799, type: 3}
   <HasChallenges>k__BackingField: 1
-  <IsInOrder>k__BackingField: 1
+  <IsInOrder>k__BackingField: 0
   TutorialChallengeLists:
   - <ChallengeTitle>k__BackingField: Equip the High-Vis Vest
     <ChallengeTriggerName>k__BackingField: TRIGGER_Safety_EquipHiVis

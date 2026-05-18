@@ -20,5 +20,5 @@ MonoBehaviour:
     and collisions are almost entirely preventable. Let us begin.
   <VoiceOver>k__BackingField: {fileID: 8300000, guid: aa4728a5f77d4c4409c04dc695c65be5, type: 3}
   <HasChallenges>k__BackingField: 0
-  <IsInOrder>k__BackingField: 1
+  <IsInOrder>k__BackingField: 0
   TutorialChallengeLists: []
