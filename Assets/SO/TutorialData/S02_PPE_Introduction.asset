@@ -13,18 +13,14 @@ MonoBehaviour:
   m_Name: S02_PPE_Introduction
   m_EditorClassIdentifier: Assembly-CSharp::Valari.Data.TutorialData
   <Title>k__BackingField: "Your PPE \u2014 What It Is and Why It Matters"
-  <Description>k__BackingField: Personal Protective Equipment (PPE) is your first
+  <Description>k__BackingField: 'Personal Protective Equipment (PPE) is your first
     line of defence in any warehouse environment. In this facility, the mandatory
     PPE is a hard hat and a high-visibility vest. The hard hat protects you from
     objects falling from racking, a risk in any environment where items are stored
     above head height. The high-vis vest ensures forklift operators and colleagues
     can see you at all times, especially in low-light areas or around blind corners.
-    You should never enter the operational floor without both items. The PPE station
-    is the yellow rack near the entrance. Walk to it now.
+    You should never enter the operational floor without both items. '
   <VoiceOver>k__BackingField: {fileID: 8300000, guid: 463b8875d8370c54aa84f03c879a4188, type: 3}
-  <HasChallenges>k__BackingField: 1
+  <HasChallenges>k__BackingField: 0
   <IsInOrder>k__BackingField: 0
-  TutorialChallengeLists:
-  - <ChallengeTitle>k__BackingField: Walk to the PPE Station
-    <ChallengeTriggerName>k__BackingField: TRIGGER_Safety_ReachPPEStation
-    <IsComplete>k__BackingField: 0
+  TutorialChallengeLists: []

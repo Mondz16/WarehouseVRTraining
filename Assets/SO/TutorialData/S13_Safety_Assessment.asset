@@ -19,9 +19,6 @@ MonoBehaviour:
     safety, everything you have just practised. Take your time, read each question
     carefully, and apply what you have learned.
   <VoiceOver>k__BackingField: {fileID: 8300000, guid: b816566606232e141b416a68900f7b3d, type: 3}
-  <HasChallenges>k__BackingField: 1
-  <IsInOrder>k__BackingField: 1
-  TutorialChallengeLists:
-  - <ChallengeTitle>k__BackingField: Complete the Safety Knowledge Assessment
-    <ChallengeTriggerName>k__BackingField: TRIGGER_Safety_AssessmentComplete
-    <IsComplete>k__BackingField: 0
+  <HasChallenges>k__BackingField: 0
+  <IsInOrder>k__BackingField: 0
+  TutorialChallengeLists: []
