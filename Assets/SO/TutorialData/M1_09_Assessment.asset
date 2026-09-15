@@ -19,6 +19,9 @@ MonoBehaviour:
     accuracy, and error recovery. Apply what you have practised, each question is
     drawn directly from the scenarios you completed in this module.
   <VoiceOver>k__BackingField: {fileID: 8300000, guid: ddad526928d6759489313107f5f1c865, type: 3}
-  <HasChallenges>k__BackingField: 0
-  <IsInOrder>k__BackingField: 0
-  TutorialChallengeLists: []
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Complete the Order Picking Assessment
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M1_AssessmentComplete
+    <IsComplete>k__BackingField: 0

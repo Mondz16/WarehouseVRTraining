@@ -16,20 +16,22 @@ namespace Valari.Managers
         private AssessmentData _currentQuestion;
         private Assessment _currentAssessment = null;
         private int _assessmentIndex = 0;
-        private List<AssessmentData> _currentAssessmentDataList = new List<AssessmentData>();
+        
+        private bool _manualLaunchConsumed = false;
+private List<AssessmentData> _currentAssessmentDataList = new List<AssessmentData>();
 
         public static Action<int> OnAssessmentFinishedEvent { get; set; }
 
-        private void OnEnable()
+private void OnEnable()
         {
             TutorialManager.OnTrainingStartedEvent += InitializeAssessment;
-            TutorialManager.OnTrainingCompleteEvent += ShowQuestion;
+            TutorialManager.OnTrainingCompleteEvent += HandleTrainingComplete;
         }
 
-        private void OnDisable()
+private void OnDisable()
         {
             TutorialManager.OnTrainingStartedEvent -= InitializeAssessment;
-            TutorialManager.OnTrainingCompleteEvent -= ShowQuestion;
+            TutorialManager.OnTrainingCompleteEvent -= HandleTrainingComplete;
         }
 
         private void InitializeAssessment(TrainingID id)
@@ -66,6 +68,51 @@ namespace Valari.Managers
         {
             OnAssessmentFinishedEvent?.Invoke(_currentAssessment.GetTotalScore());
         }
+
+public int TotalQuestions => _currentAssessmentDataList != null ? _currentAssessmentDataList.Count : 0;
+
+        // Auto-launch handler (after the last tutorial modal). If a step already launched the quiz
+        // manually (e.g. M1_09 gates progression on the score), consume that flag and skip so the
+        // quiz does not reappear after the module-complete screen. Other modules that never launch
+        // manually keep the original auto-launch behaviour unchanged.
+        private void HandleTrainingComplete()
+        {
+            if (_manualLaunchConsumed)
+            {
+                _manualLaunchConsumed = false;
+                return;
+            }
+
+            ShowQuestion();
+        }
+
+        // Launches the quiz on demand (used by AssessmentLauncher when the M1_09 modal opens).
+        // Returns false if the assessment has not been initialized yet, so early callers can avoid
+        // latching a one-shot.
+        public bool LaunchAssessment()
+        {
+            if (_currentAssessment == null || _currentAssessmentDataList == null || _currentAssessmentDataList.Count == 0)
+            {
+                Debug.LogWarning($"#{GetType().Name}# LaunchAssessment skipped: assessment not initialized yet.");
+                return false;
+            }
+
+            _manualLaunchConsumed = true;
+            _assessmentIndex = 0;
+            ShowQuestion();
+            return true;
+        }
+
+        // Restarts the current assessment from the first question (used for retake-on-fail).
+        public void RetakeAssessment()
+        {
+            if (_currentAssessment == null || _currentAssessmentDataList == null || _currentAssessmentDataList.Count == 0)
+                return;
+
+            _assessmentIndex = 0;
+            ShowQuestion();
+        }
+
     }
 }
 
