@@ -37,7 +37,7 @@ public class UIManager : MonoBehaviour
 
     public void OnFadeOutPanelAnimation()
     {
-        // _fadePanel.SetTrigger("fadeOut");
+        _fadePanel.SetTrigger("fadeOut");
     }
 
     public void OnAnimationValueChanged()

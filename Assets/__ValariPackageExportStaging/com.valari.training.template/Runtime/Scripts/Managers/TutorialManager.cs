@@ -25,6 +25,13 @@ namespace Valari.Managers
         [SerializeField] private List<TutorialFlowList> _tutorialFlowList;
         [SerializeField] private UnityEvent _onGameOverEvent;
 
+        [Header("Auto Start")]
+        [Tooltip("Module started automatically after the scene loads. The product flow starts with WarehouseSafety; pick another module only for that module's test builds.")]
+        [SerializeField] private TrainingID _autoStartTraining = TrainingID.WarehouseSafety;
+
+        [Tooltip("Seconds after the scene starts before the auto-start module begins.")]
+        [SerializeField] private float _autoStartDelay = 10f;
+
         private TrainingID _trainingID = TrainingID.None;
         private int _trainingIndex = 0;
         private List<TutorialModalUI> _currentTutorial = new List<TutorialModalUI>();
@@ -47,8 +54,20 @@ namespace Valari.Managers
             
             AudioManager.instance.PlayRandomBGM();
             
-            Delay.RunLater(this, 10f, () =>
-                OnStartWarehouseSafety());
+            Delay.RunLater(this, _autoStartDelay, () =>
+                StartTraining(_autoStartTraining));
+        }
+
+        /// <summary>Starts the given training module (None does nothing).</summary>
+        public void StartTraining(TrainingID id)
+        {
+            switch (id)
+            {
+                case TrainingID.WarehouseSafety: OnStartWarehouseSafety(); break;
+                case TrainingID.OrderPicking: OnStartOrderPicking(); break;
+                case TrainingID.PackingAndDispatch: OnStartPackingAndDispatch(); break;
+                case TrainingID.RouteOptimisation: OnStartRouteOptimisation(); break;
+            }
         }
         public void SendPrompt(string userPrompt, bool withAudio = false)
         {

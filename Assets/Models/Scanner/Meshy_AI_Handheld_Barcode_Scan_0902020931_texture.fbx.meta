@@ -3,7 +3,12 @@ guid: ce422d21d4292fd4abb5ad4e65a614a9
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: base_color
+    second: {fileID: 2800000, guid: 19b56474ab89ac7488d3d826ef18ef1b, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -56,7 +61,7 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    generateMeshLods: 0
+    generateMeshLods: 1
     meshLodGenerationFlags: 0
     maximumMeshLod: -1
     meshOptimizationFlags: -1

@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 89721286fb887b64dbe5891f013367b9
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344832
+  packageName: Factory Training
+  packageVersion: 1.0
+  assetPath: Assets/Textures/concrete/concreteOld/smoothed_cast_concrete_baseColor.png
+  uploadId: 860064
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +109,7 @@ TextureImporter:
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -154,10 +161,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 344832
-  packageName: Factory Training
-  packageVersion: 1.0
-  assetPath: Assets/Textures/concrete/concreteOld/smoothed_cast_concrete_baseColor.png
-  uploadId: 860064

@@ -143,8 +143,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5, y: 0.4, z: 0.35}
-  m_Center: {x: 0, y: 0.2, z: 0}
+  m_Size: {x: 0.76, y: 0.62, z: 1.42}
+  m_Center: {x: 0, y: 0.31, z: 0}
 --- !u!114 &1056322367633449818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +159,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ImmersiveTraining.TrainingInteractions.ToteCounter
   _requiredSku: SKU-1001
   _requiredCount: 3
+  _requireNoOtherItems: 1
+  _ignoredSkus:
+  - SKU-5099
+  - SKU-5005
   _onTargetReached:
     m_PersistentCalls:
       m_Calls: []

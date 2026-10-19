@@ -10288,7 +10288,7 @@
     "m_ZTestMode": 4,
     "m_ZWriteControl": 0,
     "m_AlphaMode": 0,
-    "m_RenderFace": 0,
+    "m_RenderFace": 2,
     "m_AlphaClip": false,
     "m_CastShadows": true,
     "m_ReceiveShadows": true,
@@ -11471,7 +11471,7 @@
     "m_ObjectId": "85442db098c84e3780db56b771a7b704",
     "m_WorkflowMode": 1,
     "m_NormalDropOffSpace": 0,
-    "m_ClearCoat": true,
+    "m_ClearCoat": false,
     "m_BlendModePreserveSpecular": true
 }
 

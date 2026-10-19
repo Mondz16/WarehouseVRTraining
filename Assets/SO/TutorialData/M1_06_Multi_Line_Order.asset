@@ -24,6 +24,6 @@ MonoBehaviour:
   <HasChallenges>k__BackingField: 1
   <IsInOrder>k__BackingField: 0
   TutorialChallengeLists:
-  - <ChallengeTitle>k__BackingField: Complete All 3 Picks in the Multi-Line Order
+  - <ChallengeTitle>k__BackingField: Complete All 3 Picks and Return the Cart to the Drop-Off
     <ChallengeTriggerName>k__BackingField: TRIGGER_M1_MultiLine_AllPicked
     <IsComplete>k__BackingField: 0

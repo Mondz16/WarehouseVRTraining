@@ -28,6 +28,7 @@ namespace Valari.UI
         [SerializeField] private TMP_Text _descriptionText;
         [SerializeField] private Button _continueButton;
         [SerializeField] private bool _disableNextSFX = false;
+        [SerializeField] private bool _enableAutoNext = false;
         [SerializeField] private ContentSizeFitter _contentSizeFitter;
 
         [Header("If Tutorial Will Teleport Player")] [SerializeField]
@@ -185,7 +186,7 @@ namespace Valari.UI
             {
                 _trainerController.MoveTrainer(_teleportPosition);
                 AudioManager.instance.PlayTeleportSFX();
-                UIManager.Services.OnFadeOutPanelAnimation();
+                // UIManager.Services.OnFadeOutPanelAnimation();
                 _teleportPosition.gameObject.SetActive(false);
                 _tutorialManager.OnTeleportPlayer(_teleportPosition.position, _teleportPosition.rotation);
             }
@@ -277,6 +278,8 @@ namespace Valari.UI
                     trigger.OnUpdateTutorialTriggerState(false);
                 _isComplete = completed;
                 _continueText.text = "Next";
+                if(_enableAutoNext)
+                    OnTriggerNextTutorial();
             }
         }
 

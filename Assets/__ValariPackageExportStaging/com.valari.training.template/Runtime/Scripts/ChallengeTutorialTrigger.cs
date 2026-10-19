@@ -14,6 +14,15 @@ public class ChallengeTutorialTrigger : MonoBehaviour
 {
     public string TriggerName => _triggerName;
 
+    /// <summary>True while this challenge's step is active, i.e. completions are accepted.</summary>
+    public bool IsArmed => _enabled;
+
+    /// <summary>
+    /// Raised when the challenge becomes armed (its step opened), so bridges can count a condition
+    /// that was already met before the step became active.
+    /// </summary>
+    public event Action<ChallengeTutorialTrigger> Armed;
+
     [SerializeField] private TutorialType _tutorialType;
     [SerializeField] [ShowIf("_tutorialType", TutorialType.Grab)] private bool _isGrabTrigger = false;
     [SerializeField] private string _triggerName;
@@ -26,6 +35,7 @@ public class ChallengeTutorialTrigger : MonoBehaviour
     [SerializeField] [ShowIf("_useChildTransform")] private Transform _childTransform;
 
     [SerializeField] [ReadOnly] private bool _enabled = false;
+    private const float OutlineWidth = 10f;
     private TutorialModalUI _tutorialModalUI;
     private Vector3 _originPos;
 
@@ -45,8 +55,13 @@ public class ChallengeTutorialTrigger : MonoBehaviour
             _grabbable.OnReleaseEvent += (hand, obj) => ShowOutline(true);
         }
 
+        // Outlines are shown by enabling the component. At width 0 QuickOutline still draws its two extra
+        // passes over every renderer; disabled, it removes them.
         if (_outline)
-            _outline.OutlineWidth = 0;
+        {
+            _outline.OutlineWidth = OutlineWidth;
+            _outline.enabled = false;
+        }
     }
 
     public void InjectTutorialModalUI(TutorialModalUI tutorialModalUI)
@@ -57,17 +72,20 @@ public class ChallengeTutorialTrigger : MonoBehaviour
 
     public void OnUpdateTutorialTriggerState(bool enable)
     {
+        bool wasEnabled = _enabled;
         _enabled = enable;
         if (_enabled)
             _onChallengeActivated?.Invoke();
         if (_outline)
-            _outline.OutlineWidth = enable ? 10 : 0;
+            _outline.enabled = enable;
+        if (_enabled && !wasEnabled)
+            Armed?.Invoke(this);
     }
 
     public void ShowOutline(bool show)
     {
-        if (_enabled)
-            _outline.OutlineWidth = show ? 10 : 0;
+        if (_enabled && _outline)
+            _outline.enabled = show;
     }
 
     [Button]
@@ -80,12 +98,23 @@ public class ChallengeTutorialTrigger : MonoBehaviour
         }
 
         if (_outline)
-            _outline.OutlineWidth = 0;
+            _outline.enabled = false;
     }
 
     public void OnTriggerComplete()
     {
         TriggerChallengeComplete();
+    }
+
+    /// <summary>
+    /// Completes the challenge if it is armed. Returns false, and does nothing, while its step is not
+    /// active, so callers can offer again later (e.g. on <see cref="Armed"/>) instead of latching.
+    /// </summary>
+    public bool TryComplete()
+    {
+        if (!_enabled) return false;
+        TriggerChallengeComplete();
+        return true;
     }
 
     public object TriggerChallengeComplete()

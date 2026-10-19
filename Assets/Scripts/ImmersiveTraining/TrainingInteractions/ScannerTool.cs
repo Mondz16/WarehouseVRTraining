@@ -72,6 +72,10 @@ namespace ImmersiveTraining.TrainingInteractions
             }
 
             bool matches = string.IsNullOrEmpty(_expectedSku) || item.Sku == _expectedSku;
+
+            // Scanned items can react (e.g. the M2 shipping label shows its verification readout).
+            foreach (IScanListener listener in item.GetComponents<IScanListener>())
+                listener.OnScanned(this, matches);
             if (matches)
             {
                 Debug.Log($"#{GetType().Name}# Scan verified -> {item.Sku}");

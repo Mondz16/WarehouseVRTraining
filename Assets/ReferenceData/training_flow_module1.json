@@ -83,7 +83,7 @@
     "hideFlags": "None",
     "TutorialChallengeLists": [
       {
-        "ChallengeTitle": "Complete All 3 Picks in the Multi-Line Order",
+        "ChallengeTitle": "Complete All 3 Picks and Return the Cart to the Drop-Off",
         "ChallengeTriggerName": "TRIGGER_M1_MultiLine_AllPicked",
         "IsComplete": false
       }

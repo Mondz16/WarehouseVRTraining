@@ -19,6 +19,9 @@ MonoBehaviour:
     Apply the rules you have learned, minimum fit, H-tape seal, label face up, and
     always verify before you dispatch.
   <VoiceOver>k__BackingField: {fileID: 8300000, guid: 4bd7bf14c21ec5640bfafbd73d378f2e, type: 3}
-  <HasChallenges>k__BackingField: 0
-  <IsInOrder>k__BackingField: 0
-  TutorialChallengeLists: []
+  <HasChallenges>k__BackingField: 1
+  <IsInOrder>k__BackingField: 1
+  TutorialChallengeLists:
+  - <ChallengeTitle>k__BackingField: Complete the Packing and Dispatch Assessment
+    <ChallengeTriggerName>k__BackingField: TRIGGER_M2_AssessmentComplete
+    <IsComplete>k__BackingField: 0

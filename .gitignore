@@ -104,3 +104,19 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Unity crash-recovery scenes
+/[Aa]ssets/_Recovery/
+/[Aa]ssets/_Recovery.meta
+
+# Burst debug info written next to player builds
+*_BurstDebugInformation_DoNotShip/
+
+# dotnet build output of the plain-C# logic tests
+/Tests/**/bin/
+/Tests/**/obj/
+
+# Local-only backups and Claude Code worktrees
+/Library_corrupt_*/
+/_MetaGuidBackup_*/
+/.claude/worktrees/
